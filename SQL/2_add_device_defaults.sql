@@ -1,3 +1,5 @@
+\connect observations
+
 COPY public.device_sensor_profiles (id, device_type, manufacturer, manufacturer_device_name, sensor_label, sensor_type_of_measurement, sensor_unit_of_measurement, sensor_accuracy, sensor_precision, sensor_height_in_metres) FROM stdin;
 e62a9d42-d288-4bb4-92ea-4991aed454c9	temperature logger	GeoPrecision	LOG-PT1000 (M-Log5W-US-SIMPLE)	#1:oC	numeric	C	0.1	0.01	-0.1
 5dbbc5d4-7fdc-43de-a8ea-3b7ce7787f5d	temperature logger	GeoPrecision	LOG-PT1000 (M-Log5W-US-SIMPLE)	#HK-Bat:V	numeric	V	\N	\N	\N

@@ -1,3 +1,5 @@
+\connect observations
+
 CREATE ROLE observations_read WITH
   NOLOGIN
   NOSUPERUSER
@@ -31,7 +33,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO observati
 
 CREATE ROLE sensordb WITH LOGIN PASSWORD 'sdbpassword';
 
-\connect observations
+
 
 GRANT CONNECT ON DATABASE observations TO sensordb;
 GRANT USAGE ON SCHEMA public TO sensordb;
