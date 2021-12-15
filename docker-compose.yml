@@ -1,0 +1,38 @@
+version: '2.2'
+
+services:
+  db:
+    build: .
+    ports:
+      - "6432:5432"
+    volumes:
+      - ./compose.sql:/docker-entrypoint-initdb.d/20-roles.sql
+      # - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  debug:
+    image: quay.io/giantswarm/debug
+    entrypoint: bash -c "sleep 50000"
+
+  web:
+    build: ../sensordb
+    #image: geocryology/sensordb:latest
+    entrypoint: bash -c "for i in 1 2 3 4 5; do sensorDb run && break || sleep 15; done"
+    volumes:
+      - ./sensordb-config:/opt/sensorDb/config
+    ports:
+      - "5308:5308"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      db:
+        condition: service_healthy  #https://stackoverflow.com/questions/47710767/what-is-the-alternative-to-condition-form-of-depends-on-in-docker-compose-versio

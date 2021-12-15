@@ -1,0 +1,1355 @@
+2021-12-14 17:32:46,827[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:32:46,829[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:05,888[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:05,890[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:21,187[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:21,189[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:36,427[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:36,429[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:51,678[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:51:51,681[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:52:06,902[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:52:06,904[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:57:47,826[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 17:57:47,829[ERROR]: Error: Couldn't get db connection: db:5432
+java.lang.Exception: Couldn't get db connection: db:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:20:57,775[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:20:57,803[ERROR]: Error: Couldn't get db connection: permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:28:08,623[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:28:08,687[ERROR]: Error: Couldn't get db connection: 192.168.16.3:5432
+java.lang.Exception: Couldn't get db connection: 192.168.16.3:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:36:10,451[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:36:10,453[ERROR]: Error: Couldn't get db connection: 192.168.16.3:5432
+java.lang.Exception: Couldn't get db connection: 192.168.16.3:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 18:36:21,708[ERROR]: Error in url: jdbc:postgresql://192.168.16.3:5432
+2021-12-14 18:36:21,709[ERROR]: Error: Couldn't get db connection: //192.168.16.3:5432
+java.lang.Exception: Couldn't get db connection: //192.168.16.3:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://192.168.16.3:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 18:36:34,489[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 18:36:34,490[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 19:00:06,529[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 19:00:06,530[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 19:14:31,389[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 19:14:31,390[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 19:28:03,187[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 19:28:03,188[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 19:28:24,748[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 19:28:24,749[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 20:45:20,192[ERROR]: Error in url: jdbc:postgresql://permafrostdb_db_1:5432
+2021-12-14 20:45:20,220[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.sql.SQLException: No suitable driver found for jdbc:postgresql://permafrostdb_db_1:5432
+	at java.sql.DriverManager.getConnection(DriverManager.java:689)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+2021-12-14 20:49:42,158[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 20:49:42,309[INFO ]: Logging initialized @990ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 20:49:43,975[INFO ]: Start thread ConversionThread [11]
+2021-12-14 20:49:43,981[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_282-b08
+2021-12-14 20:49:44,283[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 20:49:44,283[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 20:49:44,291[INFO ]: node0 Scavenging every 660000ms
+2021-12-14 20:49:45,220[INFO ]: DbServlet servlet initialization - start
+2021-12-14 20:49:45,220[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 20:49:45,222[ERROR]: Property file location can not be determined
+2021-12-14 20:49:45,222[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 20:49:45,226[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 20:49:45,976[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 20:49:45,977[INFO ]: Started @4662ms
+2021-12-14 21:05:20,143[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 21:05:20,381[INFO ]: Logging initialized @7312ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 21:05:21,111[INFO ]: Start thread ConversionThread [11]
+2021-12-14 21:05:21,117[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_312-b07
+2021-12-14 21:05:21,410[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 21:05:21,410[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 21:05:21,454[INFO ]: node0 Scavenging every 600000ms
+2021-12-14 21:05:21,748[INFO ]: DbServlet servlet initialization - start
+2021-12-14 21:05:21,748[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 21:05:21,749[ERROR]: Property file location can not be determined
+2021-12-14 21:05:21,749[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 21:05:21,752[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 21:05:22,254[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 21:05:22,255[INFO ]: Started @9230ms
+2021-12-14 21:55:18,028[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 21:55:18,047[INFO ]: Logging initialized @289ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 21:55:18,205[INFO ]: Start thread ConversionThread [11]
+2021-12-14 21:55:18,210[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_312-b07
+2021-12-14 21:55:18,242[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 21:55:18,243[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 21:55:18,246[INFO ]: node0 Scavenging every 600000ms
+2021-12-14 21:55:18,272[INFO ]: DbServlet servlet initialization - start
+2021-12-14 21:55:18,272[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 21:55:18,273[ERROR]: Property file location can not be determined
+2021-12-14 21:55:18,273[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 21:55:18,276[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 21:55:18,300[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 21:55:18,301[INFO ]: Started @547ms
+2021-12-14 21:58:17,620[ERROR]: POST error
+java.lang.Exception: Error inserting location into database: SRID=4326;POINT(-75.000000 45.000000)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:87)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:191)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Error inserting location (tester) into database
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:684)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:81)
+	... 32 more
+Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for table locations
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:117)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:668)
+	... 33 more
+2021-12-14 22:00:04,340[ERROR]: POST error
+java.lang.Exception: Error inserting location into database: SRID=4326;POINT(-75.000000 45.000000)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:87)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:191)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Error inserting location (tester) into database
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:684)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:81)
+	... 27 more
+Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for table locations
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:117)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:668)
+	... 28 more
+2021-12-14 22:16:33,558[ERROR]: POST error
+java.lang.Exception: 'device_type' parameter must be specified
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.getStringParameter(DbServlet.java:336)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:205)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+2021-12-14 22:35:01,191[ERROR]: POST error
+java.lang.Exception: 'acquired_on' parameter must be a date
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.optDateParameter(DbServlet.java:417)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.getDateParameter(DbServlet.java:422)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:206)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: DAY_OF_MONTH
+	at java.util.GregorianCalendar.computeTime(GregorianCalendar.java:2644)
+	at java.util.Calendar.updateTime(Calendar.java:3395)
+	at java.util.Calendar.getTimeInMillis(Calendar.java:1782)
+	at java.util.Calendar.getTime(Calendar.java:1755)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DateUtils.parseUtcString(DateUtils.java:31)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.optDateParameter(DbServlet.java:413)
+	... 33 more
+2021-12-14 22:41:50,446[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 22:41:50,449[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 22:42:05,677[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 22:42:05,679[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 22:42:20,971[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 22:42:20,989[INFO ]: Logging initialized @281ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 22:42:21,142[INFO ]: Start thread ConversionThread [11]
+2021-12-14 22:42:21,147[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_312-b07
+2021-12-14 22:42:21,178[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 22:42:21,178[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 22:42:21,181[INFO ]: node0 Scavenging every 600000ms
+2021-12-14 22:42:21,207[INFO ]: DbServlet servlet initialization - start
+2021-12-14 22:42:21,207[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 22:42:21,208[ERROR]: Property file location can not be determined
+2021-12-14 22:42:21,208[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 22:42:21,211[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 22:42:21,226[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 22:42:21,226[INFO ]: Started @522ms
+2021-12-14 22:44:49,605[ERROR]: POST error
+java.lang.Exception: Error inserting location into database: SRID=4326;POINT(-75.000000 45.000000)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:87)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:191)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Error inserting location (bet) into database
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:684)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:81)
+	... 32 more
+Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for table locations
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:117)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:668)
+	... 33 more
+2021-12-14 23:02:42,739[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:02:42,741[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:02:57,964[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:02:57,967[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:03:13,229[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 23:03:13,248[INFO ]: Logging initialized @261ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 23:03:13,394[INFO ]: Start thread ConversionThread [11]
+2021-12-14 23:03:13,399[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_312-b07
+2021-12-14 23:03:13,431[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 23:03:13,432[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 23:03:13,434[INFO ]: node0 Scavenging every 660000ms
+2021-12-14 23:03:13,459[INFO ]: DbServlet servlet initialization - start
+2021-12-14 23:03:13,459[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 23:03:13,460[ERROR]: Property file location can not be determined
+2021-12-14 23:03:13,460[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 23:03:13,463[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 23:03:13,478[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 23:03:13,478[INFO ]: Started @496ms
+2021-12-14 23:10:05,297[ERROR]: POST error
+java.lang.Exception: Error inserting location into database: SRID=4326;POINT(-114.000000 45.000000)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:87)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:191)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Error inserting location (tester) into database
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:684)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:81)
+	... 27 more
+Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for table locations
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:117)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:668)
+	... 28 more
+2021-12-14 23:10:11,274[ERROR]: POST error
+java.lang.Exception: Error inserting location into database: SRID=4326;POINT(-114.000000 45.000000)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:87)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:191)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: Error inserting location (tester) into database
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:684)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServletActions.createLocation(DbServletActions.java:81)
+	... 32 more
+Caused by: org.postgresql.util.PSQLException: ERROR: permission denied for table locations
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2477)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2190)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:300)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:117)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbApiJdbc.createLocation(DbApiJdbc.java:668)
+	... 33 more
+2021-12-14 23:18:16,465[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:18:17,048[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:18:32,331[ERROR]: Connection error: 
+org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:18:32,333[ERROR]: Error: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+java.lang.Exception: Couldn't get db connection: //permafrostdb_db_1:5432/observations
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:35)
+	at ca.carleton.gcrc.sensorDb.command.CommandRun.runCommand(CommandRun.java:114)
+	at ca.carleton.gcrc.sensorDb.command.Main.performCommand(Main.java:198)
+	at ca.carleton.gcrc.sensorDb.command.Main.execute(Main.java:117)
+	at ca.carleton.gcrc.sensorDb.command.Main.main(Main.java:49)
+Caused by: org.postgresql.util.PSQLException: Connection to permafrostdb_db_1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:450)
+	at org.postgresql.Driver.connect(Driver.java:252)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at ca.carleton.gcrc.sensorDb.jdbc.DbConnection.fromParameters(DbConnection.java:25)
+	... 4 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:68)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 11 more
+2021-12-14 23:18:48,396[INFO ]: Connection to PostgreSQL 13.5 (Debian 13.5-1.pgdg110+1) successful.
+
+2021-12-14 23:18:49,007[INFO ]: Logging initialized @1602ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-14 23:18:50,322[INFO ]: Start thread ConversionThread [11]
+2021-12-14 23:18:50,327[INFO ]: jetty-9.4.39.v20210325; built: 2021-03-25T14:42:11.471Z; git: 9fc7ca5a922f2a37b84ec9dbc26a5168cee7e667; jvm 1.8.0_312-b07
+2021-12-14 23:18:50,905[INFO ]: DefaultSessionIdManager workerName=node0
+2021-12-14 23:18:50,906[INFO ]: No SessionScavenger set, using defaults
+2021-12-14 23:18:50,952[INFO ]: node0 Scavenging every 600000ms
+2021-12-14 23:18:51,301[INFO ]: DbServlet servlet initialization - start
+2021-12-14 23:18:51,301[INFO ]: DbServlet servlet initialization - completed
+2021-12-14 23:18:51,302[ERROR]: Property file location can not be determined
+2021-12-14 23:18:51,302[INFO ]: OnUploadedListener: SensorFileUploaded
+2021-12-14 23:18:51,305[INFO ]: Started o.e.j.s.ServletContextHandler@710726a3{/,null,AVAILABLE}
+2021-12-14 23:18:51,801[INFO ]: Started ServerConnector@475530b9{HTTP/1.1, (http/1.1)}{0.0.0.0:5308}
+2021-12-14 23:18:51,802[INFO ]: Started @4444ms
+2021-12-14 23:42:45,587[ERROR]: POST error
+java.lang.Exception: 'acquired_on' parameter must be a date
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.optDateParameter(DbServlet.java:417)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.getDateParameter(DbServlet.java:422)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.doPost(DbServlet.java:206)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:791)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:279)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: DAY_OF_MONTH
+	at java.util.GregorianCalendar.computeTime(GregorianCalendar.java:2644)
+	at java.util.Calendar.updateTime(Calendar.java:3395)
+	at java.util.Calendar.getTimeInMillis(Calendar.java:1782)
+	at java.util.Calendar.getTime(Calendar.java:1755)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DateUtils.parseUtcString(DateUtils.java:31)
+	at ca.carleton.gcrc.sensorDb.servlet.db.DbServlet.optDateParameter(DbServlet.java:413)
+	... 33 more
