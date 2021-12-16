@@ -10,13 +10,13 @@ This package uses `docker compose` to create an easy-to-use instance of the perm
 Docker creates two separate containers - one for the postgres database and one for the sensordb web service. The first time you launch the environment, the database will be built and populated with some device profiles. 
 
 ## Launching
-You'll need to be in the project directory:
+First, download this repository and go into the directory:
 ```bash
 git clone https://github.com/geocryology/permafrostdb-suite
 cd permafrostdb-suite
 ```
 
-To start the permafrost database environment, navigate to the same directory as the `docker-compose.yml` file and enter the following:
+To start the permafrost database environment, assuming you're in the same directory as the `docker-compose.yml` file, enter the following:
 ```bash
 docker-compose up
 ```
